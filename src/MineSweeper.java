@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -25,7 +26,6 @@ public class MineSweeper {
 
     public void run() {
         prepareGame();
-        print(map);
         System.out.println();
         game(map);
     }
@@ -48,6 +48,7 @@ public class MineSweeper {
     }
 
     public void print(String[][] arr) {
+        System.out.println("=========================");
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[0].length; j++) {
                 if (arr[i][j] != "-1") {
